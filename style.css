@@ -112,3 +112,92 @@ ul li span{
 ul li span:hover{
     background: #edeef0;
 }
+
+@media (max-width: 768px) {
+    .container {
+        margin: 8% auto; /* Adjusted margin for smaller screens */
+    }
+
+    .todo-app {
+        margin: 10%;
+        padding: 20px; /* Adjusted padding for smaller screens */
+    }
+
+    .todo-app h2 {
+        font-size: 2rem; /* Adjusted font size for smaller screens */
+    }
+
+    .row {
+        flex-direction: column;
+        padding: 0 15px; /* Adjusted padding for smaller screens */
+    }
+
+    input {
+        font-size: 0.9rem; /* Adjusted font size for smaller screens */
+    }
+
+    button {
+        padding: 14px 40px; /* Adjusted padding for smaller screens */
+    }
+
+    ul li {
+        padding: 10px 8px 10px 40px; /* Adjusted padding for smaller screens */
+    }
+
+    ul li::before {
+        height: 24px;
+        width: 24px;
+        top: 10px;
+        left: 6px;
+    }
+
+    ul li span {
+        width: 36px;
+        height: 36px;
+        line-height: 36px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        margin: 6% auto; /* Further adjusted margin for smaller screens */
+    }
+
+    .todo-app {
+        margin: 10%;
+        padding: 15px; /* Further adjusted padding for smaller screens */
+    }
+
+    .todo-app h2 {
+        font-size: 1.8rem; /* Further adjusted font size for smaller screens */
+    }
+
+    .row {
+        padding: 0 10px; /* Further adjusted padding for smaller screens */
+    }
+
+    input {
+        font-size: 0.8rem; /* Further reduced font size for smaller screens */
+    }
+
+    button {
+        padding: 12px 30px; /* Adjusted padding for smaller screens */
+    }
+
+    ul li {
+        padding: 8px 6px 8px 36px; /* Adjusted padding for smaller screens */
+    }
+
+    ul li::before {
+        height: 20px;
+        width: 20px;
+        top: 8px;
+        left: 4px;
+    }
+
+    ul li span {
+        width: 32px;
+        height: 32px;
+        line-height: 32px;
+    }
+}
