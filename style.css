@@ -6,37 +6,37 @@
 }
 
 .container {
-    position: relative; /* Add position relative */
     width: 100%;
     min-height: 100vh;
     background: linear-gradient(135deg, #153677, #4e085f);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 50px; /* Added padding left and right */
 }
 
 .todo-app {
     width: 100%;
     max-width: 540px;
     background-color: #fff;
-    position: absolute; /* Change to absolute */
     padding: 40px 30px 70px;
-    margin: 10% 30%;
-    align-items: center;
     border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
 }
 
-
-.todo-app h2{
+.todo-app h2 {
     color: #002765;
     display: flex;
     align-items: center;
     margin-bottom: 20px;
 }
 
-.todo-app h2 img{
+.todo-app h2 img {
     width: 30px;
     margin-left: 10px;
 }
 
-.row{
+.row {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -46,15 +46,16 @@
     margin-bottom: 25px;
 }
 
-input{
-    flex: 1;    /*means full width */
+input {
+    flex: 1;
     border: none;
     outline: none;
     background: transparent;
     padding: 10px;
+    font-size: 1rem;
 }
 
-button{
+button {
     border: none;
     outline: none;
     padding: 16px 50px;
@@ -65,7 +66,7 @@ button{
     border-radius: 40px;
 }
 
-ul li{
+ul li {
     list-style-type: none;
     font-size: 17px;
     padding: 12px 8px 12px 50px;
@@ -74,7 +75,7 @@ ul li{
     position: relative;
 }
 
-ul li::before{
+ul li::before {
     content: '';
     position: absolute;
     height: 28px;
@@ -87,16 +88,16 @@ ul li::before{
     left: 8px;
 }
 
-ul li.checked{
+ul li.checked {
     color: #555;
-    text-decoration: line-through; /* Cut the text line from  half */
+    text-decoration: line-through;
 }
 
-ul li.checked::before{
+ul li.checked::before {
     background-image: url(imgs/check.png);
 }
 
-ul li span{
+ul li span {
     position: absolute;
     right: 0;
     top: 5px;
@@ -109,39 +110,38 @@ ul li span{
     border-radius: 50%;
 }
 
-ul li span:hover{
+ul li span:hover {
     background: #edeef0;
 }
 
 @media (max-width: 768px) {
     .container {
-        margin: 8% auto; /* Adjusted margin for smaller screens */
+        padding: 0 50px; /* Adjusted padding for smaller screens */
     }
 
     .todo-app {
-        margin: 10%;
-        padding: 20px; /* Adjusted padding for smaller screens */
+        padding: 30px;
     }
 
     .todo-app h2 {
-        font-size: 2rem; /* Adjusted font size for smaller screens */
+        font-size: 1.8rem;
     }
 
     .row {
         flex-direction: column;
-        padding: 0 15px; /* Adjusted padding for smaller screens */
+        padding: 0 15px;
     }
 
     input {
-        font-size: 0.9rem; /* Adjusted font size for smaller screens */
+        font-size: 0.9rem;
     }
 
     button {
-        padding: 14px 40px; /* Adjusted padding for smaller screens */
+        padding: 14px 40px;
     }
 
     ul li {
-        padding: 10px 8px 10px 40px; /* Adjusted padding for smaller screens */
+        padding: 10px 8px 10px 40px;
     }
 
     ul li::before {
@@ -160,32 +160,31 @@ ul li span:hover{
 
 @media (max-width: 480px) {
     .container {
-        margin: 6% auto; /* Further adjusted margin for smaller screens */
+        padding: 0 50px; /* Adjusted padding for smaller screens */
     }
 
     .todo-app {
-        margin: 10%;
-        padding: 15px; /* Further adjusted padding for smaller screens */
+        padding: 20px;
     }
 
     .todo-app h2 {
-        font-size: 1.8rem; /* Further adjusted font size for smaller screens */
+        font-size: 1.5rem;
     }
 
     .row {
-        padding: 0 10px; /* Further adjusted padding for smaller screens */
+        padding: 0 10px;
     }
 
     input {
-        font-size: 0.8rem; /* Further reduced font size for smaller screens */
+        font-size: 0.8rem;
     }
 
     button {
-        padding: 12px 30px; /* Adjusted padding for smaller screens */
+        padding: 12px 30px;
     }
 
     ul li {
-        padding: 8px 6px 8px 36px; /* Adjusted padding for smaller screens */
+        padding: 8px 6px 8px 36px;
     }
 
     ul li::before {
